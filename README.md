@@ -1,4 +1,11 @@
-# Air You Dying For
+<div align="center">
+  <img src="docs/static/logo.png" alt="Air You Dying For" width="120" style="filter:invert(1)">
+  <h1>Air You Dying For</h1>
+</div>
+
+[![Build](https://github.com/just5ky/Air-You-Dying-For/actions/workflows/docker-build-push.yml/badge.svg)](https://github.com/just5ky/Air-You-Dying-For/actions/workflows/docker-build-push.yml)
+[![Image](https://img.shields.io/badge/ghcr.io-air--you--dying--for-0d1117?logo=docker&logoColor=white)](https://github.com/just5ky/Air-You-Dying-For/pkgs/container/air-you-dying-for)
+[![Site](https://img.shields.io/badge/website-just5ky.github.io-7c3aed?logo=github&logoColor=white)](https://just5ky.github.io/Air-You-Dying-For)
 
 CO2, temperature, and humidity monitor using the SCD41 sensor on Raspberry Pi 4. Exposes metrics via Prometheus.
 
