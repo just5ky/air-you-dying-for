@@ -1,0 +1,4 @@
+adafruit-circuitpython-scd4x
+adafruit-blinka
+prometheus_client
+RPi.GPIO

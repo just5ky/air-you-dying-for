@@ -1,0 +1,14 @@
+services:
+  scd41-monitor:
+    build: .
+    image: ghcr.io/${GITHUB_REPOSITORY_OWNER:-just5ky}/air-you-dying-for:latest
+    restart: unless-stopped
+    environment:
+      PROMETHEUS_PORT: ${PROMETHEUS_PORT:-8000}
+    ports:
+      - "${PROMETHEUS_PORT:-8000}:${PROMETHEUS_PORT:-8000}"
+    devices:
+      - /dev/i2c-1:/dev/i2c-1
+    group_add:
+      # i2c group GID on RPi OS — verify with: getent group i2c | cut -d: -f3
+      - "995"
